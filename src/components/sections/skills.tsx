@@ -1,6 +1,6 @@
 import { RESUME_DATA, type SkillCategory } from "@/lib/data";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function SkillsSection() {
   const categories = Object.keys(RESUME_DATA.skills) as SkillCategory[];
@@ -16,26 +16,24 @@ export function SkillsSection() {
             A comprehensive overview of my technical capabilities.
           </p>
         </div>
-        <Tabs defaultValue={categories[0]} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 h-auto flex-wrap">
-            {categories.map((category) => (
-              <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
-            ))}
-          </TabsList>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
-            <TabsContent key={category} value={category}>
-                <div className="p-6 bg-card rounded-lg mt-4">
-                    <div className="flex flex-wrap gap-3">
-                    {RESUME_DATA.skills[category].map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-base px-4 py-2">
-                        {skill}
-                        </Badge>
-                    ))}
-                    </div>
+            <Card key={category}>
+              <CardHeader>
+                <CardTitle className="font-headline text-lg">{category}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {RESUME_DATA.skills[category].map((skill) => (
+                    <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm">
+                      {skill}
+                    </Badge>
+                  ))}
                 </div>
-            </TabsContent>
+              </CardContent>
+            </Card>
           ))}
-        </Tabs>
+        </div>
       </div>
     </section>
   );
