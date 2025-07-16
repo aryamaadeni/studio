@@ -1,37 +1,29 @@
 import { RESUME_DATA, type SkillCategory } from "@/lib/data";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export function SkillsSection() {
   const categories = Object.keys(RESUME_DATA.skills) as SkillCategory[];
 
   return (
-    <section id="skills" className="py-24 bg-muted/50">
+    <section id="skills" className="py-24">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="font-headline text-4xl font-extrabold tracking-tight">
             Technical Expertise
           </h2>
-          <p className="mt-2 text-lg text-muted-foreground">
-            A comprehensive overview of my technical capabilities.
-          </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-8">
           {categories.map((category) => (
-            <Card key={category}>
-              <CardHeader>
-                <CardTitle className="font-headline text-lg">{category}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {RESUME_DATA.skills[category].map((skill) => (
-                    <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <div key={category} className="text-center">
+              <h3 className="font-headline text-2xl font-semibold mb-4">{category}</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {RESUME_DATA.skills[category].map((skill) => (
+                  <Badge key={skill} variant="secondary" className="px-4 py-2 text-base transition-transform hover:scale-105">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
