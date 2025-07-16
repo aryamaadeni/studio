@@ -14,12 +14,23 @@ export function SkillsSection() {
             Technical Expertise
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          {allSkills.map((skill) => (
-            <Badge key={skill} variant="secondary" className="px-4 py-2 text-base transition-transform hover:scale-105">
-              {skill}
-            </Badge>
-          ))}
+        <div 
+          className="relative w-full overflow-hidden"
+          style={{
+            maskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent)',
+          }}
+        >
+          <div className="flex w-max animate-scroll-slow hover:pause">
+            {[...allSkills, ...allSkills].map((skill, index) => (
+              <Badge 
+                key={`${skill}-${index}`} 
+                variant="secondary" 
+                className="mx-2 shrink-0 px-4 py-2 text-base"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
         </div>
       </div>
     </section>
