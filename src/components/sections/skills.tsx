@@ -2,9 +2,7 @@ import { RESUME_DATA, type SkillCategory } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
 
 export function SkillsSection() {
-  const allSkills = (Object.keys(RESUME_DATA.skills) as SkillCategory[]).flatMap(
-    (category) => RESUME_DATA.skills[category]
-  );
+  const skillCategories = Object.keys(RESUME_DATA.skills) as SkillCategory[];
 
   return (
     <section id="skills" className="py-24">
@@ -14,16 +12,25 @@ export function SkillsSection() {
             Technical Expertise
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-2">
-            {allSkills.map((skill, index) => (
-              <Badge 
-                key={`${skill}-${index}`} 
-                variant="secondary" 
-                className="px-4 py-2 text-base"
-              >
-                {skill}
-              </Badge>
-            ))}
+        <div className="space-y-8">
+          {skillCategories.map((category) => (
+            <div key={category}>
+              <h3 className="font-headline text-2xl font-semibold mb-4 text-center md:text-left">
+                {category}
+              </h3>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                {RESUME_DATA.skills[category].map((skill, index) => (
+                  <Badge 
+                    key={`${skill}-${index}`} 
+                    variant="secondary" 
+                    className="px-4 py-2 text-base"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
