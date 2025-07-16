@@ -1,36 +1,29 @@
-import { RESUME_DATA, type SkillCategory } from "@/lib/data";
-import { Badge } from "@/components/ui/badge";
+import { RESUME_DATA } from "@/lib/data";
+import { Check } from "lucide-react";
 
 export function SkillsSection() {
-  const skillCategories = Object.keys(RESUME_DATA.skills) as SkillCategory[];
+  // Flatten all skills from all categories into a single array
+  const allSkills = Object.values(RESUME_DATA.skills).flat();
 
   return (
     <section id="skills" className="py-24">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-extrabold tracking-tight">
-            Technical Expertise
-          </h2>
-        </div>
-        <div className="space-y-8">
-          {skillCategories.map((category) => (
-            <div key={category}>
-              <h3 className="font-headline text-2xl font-semibold mb-4 text-center md:text-left">
-                {category}
-              </h3>
-              <div className="flex flex-wrap justify-center md:justify-start gap-2">
-                {RESUME_DATA.skills[category].map((skill, index) => (
-                  <Badge 
-                    key={`${skill}-${index}`} 
-                    variant="secondary" 
-                    className="px-4 py-2 text-base"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+          <div className="md:col-span-1">
+            <h2 className="font-headline text-4xl font-extrabold tracking-tight">
+              Technical Expertise
+            </h2>
+          </div>
+          <div className="md:col-span-2">
+            <ul className="grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3">
+              {allSkills.map((skill, index) => (
+                <li key={`${skill}-${index}`} className="flex items-center gap-2">
+                  <Check className="h-5 w-5 text-primary" />
+                  <span className="text-lg">{skill}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
