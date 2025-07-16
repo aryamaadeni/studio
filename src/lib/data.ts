@@ -111,11 +111,24 @@ madeniarya@gmail.com | +91 8129523219 | linkedin.com/in/aryamaadeni | Kozhikode,
 Summary:
 Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) applications. Proven track record of delivering strong, user-focused mobile solutions that enhance user engagement and drive business value. Proficient in leveraging modern frameworks, architectural patterns (MVC, MVVM), and Agile methodologies to ensure scalable and easy-to-maintain codebases. Seeking to contribute advanced mobile development skills to a dynamic team focused on innovative product development.
 
+Technical Skills:
+- Languages: Swift, Objective-C, Dart
+- Frameworks/Platforms: Flutter (BLoC), iOS, UIKit, SwiftUI, React Native
+- IDEs/Tools: VS Code, Android Studio, Xcode, Jira, ClickUp, Asana, Bitbucket, GitHub, Gerrit
+- Architectural Patterns: MVC, MVVM
+- Notifications: Firebase, APNS, One Signal, Azure Push Notification
+- Development Expertise: SDK Development, RESTful APIs, SOAP, UI/UX Principles, Source Control, Certificates, App Store Management, Version Control, Localization
+- Libraries/Technologies: Alamofire, Firebase, Deep Linking, Cloud Messaging, CoreData, GCD, Core Bluetooth
+- Testing: XCTest, XCUITest, Flutter Testing Frameworks
+- Methodologies: Agile, Scrum
+- Deployment: App Store, Play Store
+
 Experience:
 Mobile App Developer | Deltasoft (May 2024 – Present)
 - Led development for cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications.
 - Architected and developed the Brightbird mobile application using Flutter with HealthKit integration.
 - Engineered robust native iOS applications, focusing on secure data handling and UI/UX.
+- Managed the full SDLC for multiple projects, including deployment to App Store and Play Store.
 
 Mobile App Developer | Purposecode (Nov 2023 – May 2024)
 - Led initiatives to refactor legacy codebases, achieving a 40% reduction in complexity and a 20% boost in performance.
@@ -129,13 +142,9 @@ iOS Developer | Xpertcube (Dec 2017 – Feb 2020)
 - Executed technical designs and led the implementation of over 10 complex iOS applications.
 - Improved product quality through code reviews, unit tests, and collaboration with QA teams.
 
-Skills:
-- Languages: Swift, Objective-C, Dart
-- Frameworks/Platforms: Flutter (BLoC), iOS, UIKit, SwiftUI, React Native
-- IDEs/Tools: VS Code, Android Studio, Xcode, Jira, ClickUp, Asana, Bitbucket, GitHub
-- Architectural Patterns: MVC, MVVM
-- Expertise: SDK Development, RESTful APIs, UI/UX Principles, App Store Management, Localization
-- Testing: XCTest, XCUITest, Flutter Testing Frameworks
+iOS Trainee | Codemac (May 2017 – Dec 2017)
+- Designed and built core applications for the iOS platform.
+- Focused on ensuring excellent performance, quality, and responsiveness of applications.
 
 Education:
 B-Tech in Computer Science, College of Engineering, Adoor - CUSAT (2013 – 2017)`
