@@ -12,9 +12,9 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
+        <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
-        <SkillsSection />
         <EducationSection />
         <ContactSection />
       </main>
