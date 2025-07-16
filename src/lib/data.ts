@@ -83,24 +83,99 @@ export const RESUME_DATA = {
       },
       hint: "food app"
     },
+    {
+      title: "Motor App",
+      description: "Platform for buying/selling pre-owned cars. Built features for car listings, chat between users, and transaction flows end-to-end.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Car Rental", "Marketplace", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/motor-app/id1498883504",
+      },
+      hint: "car rental"
+    },
+    {
+      title: "Altruify",
+      description: "A platform that donates based on user activity. Built donation tracking and API integrations with Apple HealthKit, Google Fit, and more.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Business", "Health", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/altruify/id1588423926",
+      },
+      hint: "donation tracker"
+    },
+    {
+      title: "Ghadana",
+      description: "A Kuwaiti cuisine app for weekly/monthly lunch subscriptions. Implemented the full meal ordering and scheduling system.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Food & Drink", "Subscription", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/ghadana/id998866958",
+      },
+      hint: "food subscription"
+    },
+    {
+      title: "Zidnei",
+      description: "Online learning platform for school subjects and aptitude tests. Developed lessons, quizzes, model answers, and student tracking tools.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["E-Learning", "Education", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/zidnei/id1109706854",
+      },
+      hint: "e-learning platform"
+    },
+    {
+      title: "Taaleb",
+      description: "Learning Management System for Kuwait schools. Built modules for users (students/teachers/parents), content delivery, communication, and progress tracking.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Education", "LMS", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/taaleb/id880917220",
+      },
+      hint: "school lms"
+    },
+    {
+      title: "Alsayer Academy",
+      description: "E-learning platform with course delivery and registration. Built all key features to support content access and user enrollment.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["E-Learning", "Education", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/alsayer-academy/id1454200366",
+      },
+      hint: "academy learning"
+    },
+    {
+      title: "UCA School Kuwait",
+      description: "Educational app for UCA School in Kuwait. Developed portals for students and teachers, resource sharing, and academic tools.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Education", "School App", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/uca-school-kuwait/id1060110418",
+      },
+      hint: "school portal"
+    }
   ],
   skills: {
-    "Languages & Frameworks": [
-      { name: "Swift / SwiftUI", level: 95 },
+    "Languages": [
+      { name: "Swift", level: 95 },
       { name: "Objective-C", level: 90 },
-      { name: "Flutter / Dart", level: 90 },
+      { name: "Dart", level: 90 },
+    ],
+    "Frameworks & Platforms": [
+      { name: "Flutter (BLoC)", level: 90 },
+      { name: "iOS (UIKit & SwiftUI)", level: 95 },
       { name: "React Native", level: 80 },
     ],
-    "Tools & Platforms": [
-      { name: "Xcode & Android Studio", level: 95 },
-      { name: "Firebase", level: 90 },
-      { name: "Git & CI/CD", level: 85 },
+    "Tools & IDEs": [
+      { name: "Xcode", level: 95 },
+      { name: "Android Studio", level: 90 },
+      { name: "VS Code", level: 85 },
       { name: "Jira & Asana", level: 88 },
+      { name: "Git & CI/CD", level: 85 },
     ],
-    "Concepts & Patterns": [
+    "Concepts & Expertise": [
       { name: "MVVM / MVC", level: 92 },
-      { name: "BLoC State Management", level: 88 },
       { name: "RESTful APIs & SOAP", level: 90 },
+      { name: "SDK Development", level: 85 },
       { name: "Agile & Scrum", level: 95 },
     ],
   },
