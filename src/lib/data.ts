@@ -1,105 +1,144 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Aryama",
-  title: "Innovative Full Stack Developer",
+  name: "Arya M",
+  title: "Mobile Application Developer",
   profilePicture: "https://placehold.co/400x400.png",
   social: [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/aryam-adeni",
       icon: Github,
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/",
+      url: "https://linkedin.com/in/aryamaadeni",
       icon: Linkedin,
     },
     {
       name: "Email",
-      url: "mailto:aryama@example.com",
+      url: "mailto:madeniarya@gmail.com",
       icon: Mail,
     }
   ],
-  about: "A forward-thinking Full Stack Developer with a passion for building elegant, functional, and scalable web applications. I thrive on solving complex problems and turning ideas into high-quality code. My expertise spans across the entire development lifecycle, from conceptualization to deployment and beyond.",
+  about: "Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) applications. Proven track record of delivering strong, user-focused mobile solutions that enhance user engagement and drive business value. Proficient in leveraging modern frameworks, architectural patterns (MVC, MVVM), and Agile methodologies to ensure scalable and easy-to-maintain codebases.",
   projects: [
     {
-      title: "Project Alpha",
-      description: "A cutting-edge e-commerce platform built with Next.js, featuring a serverless architecture and real-time inventory updates.",
+      title: "FeatureMe",
+      description: "Global music service marketplace connecting musicians to buy and sell custom music services. Managed secure transactions via external payment gateways.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Next.js", "React", "TypeScript", "Vercel"],
+      tags: ["Music", "Marketplace", "iOS"],
       links: {
-        github: "https://github.com",
-        live: "https://vercel.com",
+        live: "https://apps.apple.com/in/app/featureme-featuring-you/id6478915698",
       },
-      hint: "ecommerce platform"
+      hint: "music marketplace"
     },
     {
-      title: "Project Beta",
-      description: "A collaborative data visualization tool that allows teams to create and share interactive dashboards in real-time.",
+      title: "Bright Bird",
+      description: "A science-backed app for stress reduction, better sleep, and personal growth, offering interactive programs and personalized goal tracking.",
       image: "https://placehold.co/600x400.png",
-      tags: ["React", "D3.js", "Firebase", "Node.js"],
+      tags: ["Well Being", "HealthKit", "Flutter"],
       links: {
-        github: "https://github.com",
-        live: "#",
+        live: "https://apps.apple.com/in/app/bright-bird-heal-and-grow/id6651851924",
       },
-      hint: "data dashboard"
+      hint: "wellness app"
     },
     {
-      title: "Project Gamma",
-      description: "An open-source content management system designed for developers, focused on speed, security, and extensibility.",
+        title: "Purpose Color",
+        description: "Goal setting and habit tracking app for personal development, featuring daily action tracking and self-help networking.",
+        image: "https://placehold.co/600x400.png",
+        tags: ["Motivation", "Productivity", "iOS"],
+        links: {
+          live: "https://apps.apple.com/in/app/purposecolor-goal-setting-app/id1186639523",
+        },
+        hint: "goal tracking"
+    },
+    {
+      title: "iOsho",
+      description: "A comprehensive meditation platform offering Osho talks, radio, tarot games, and audio/video content with complex media playback and subscription models.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Node.js", "GraphQL", "PostgreSQL", "Docker"],
+      tags: ["Meditation", "Streaming", "iOS"],
       links: {
-        github: "https://github.com",
-        live: "#",
+        live: "https://apps.apple.com/in/app/iosho/id1528372736",
       },
-      hint: "cms dashboard"
+      hint: "meditation app"
+    },
+    {
+      title: "Geojit FundsGenie",
+      description: "Mutual fund app with smart investing tools, portfolio aggregation, and Morningstar integration for real-time investment insights.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Finance", "Fintech", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/geojit-fundsgenie/id1617766708",
+      },
+      hint: "finance app"
+    },
+    {
+      title: "Cafe Bazza",
+      description: "A food ordering app for a specific restaurant, featuring a secure ordering flow, payment integration, and menu display.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Food Ordering", "E-commerce", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/cafebazza/id1448020837",
+      },
+      hint: "food app"
     },
   ],
   skills: {
-    "Frontend": [
-      { name: "React / Next.js", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "HTML5 & CSS3", level: 98 },
+    "Languages & Frameworks": [
+      { name: "Swift / SwiftUI", level: 95 },
+      { name: "Objective-C", level: 90 },
+      { name: "Flutter / Dart", level: 90 },
+      { name: "React Native", level: 80 },
     ],
-    "Backend": [
-      { name: "Node.js / Express", level: 90 },
-      { name: "Python / Django", level: 75 },
-      { name: "GraphQL", level: 80 },
-      { name: "REST APIs", level: 95 },
+    "Tools & Platforms": [
+      { name: "Xcode & Android Studio", level: 95 },
+      { name: "Firebase", level: 90 },
+      { name: "Git & CI/CD", level: 85 },
+      { name: "Jira & Asana", level: 88 },
     ],
-    "Databases & DevOps": [
-      { name: "PostgreSQL", level: 88 },
-      { name: "MongoDB", level: 78 },
-      { name: "Docker", level: 85 },
-      { name: "CI/CD", level: 80 },
+    "Concepts & Patterns": [
+      { name: "MVVM / MVC", level: 92 },
+      { name: "BLoC State Management", level: 88 },
+      { name: "RESTful APIs & SOAP", level: 90 },
+      { name: "Agile & Scrum", level: 95 },
     ],
   },
-  resumeText: `Aryama | Full Stack Developer
+  resumeText: `ARYA M
+Mobile Application Developer
+madeniarya@gmail.com | +91 8129523219 | linkedin.com/in/aryamaadeni | Kozhikode, Kerala
 
 Summary:
-A forward-thinking Full Stack Developer with a passion for building elegant, functional, and scalable web applications. Expertise in JavaScript, React, Next.js, Node.js, and modern web technologies. Proven ability to lead projects, solve complex problems, and deliver high-quality software solutions.
+Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) applications. Proven track record of delivering strong, user-focused mobile solutions that enhance user engagement and drive business value. Proficient in leveraging modern frameworks, architectural patterns (MVC, MVVM), and Agile methodologies to ensure scalable and easy-to-maintain codebases. Seeking to contribute advanced mobile development skills to a dynamic team focused on innovative product development.
 
 Experience:
-Senior Software Engineer, TechCorp (2020-Present)
-- Led the development of Project Alpha, a high-traffic e-commerce platform, resulting in a 30% increase in performance.
-- Architected and implemented a new microservices-based backend using Node.js and GraphQL.
-- Mentored junior developers and conducted code reviews to maintain high code quality standards.
+Mobile App Developer | Deltasoft (May 2024 – Present)
+- Led development for cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications.
+- Architected and developed the Brightbird mobile application using Flutter with HealthKit integration.
+- Engineered robust native iOS applications, focusing on secure data handling and UI/UX.
 
-Software Developer, Innovate LLC (2018-2020)
-- Developed and maintained full-stack features for a suite of SaaS products using React and Python/Django.
-- Collaborated with cross-functional teams to define, design, and ship new features.
+Mobile App Developer | Purposecode (Nov 2023 – May 2024)
+- Led initiatives to refactor legacy codebases, achieving a 40% reduction in complexity and a 20% boost in performance.
+- Managed the full SDLC for key mobile projects (Featureme, Purpose Colour) as the sole developer.
+
+iOS Developer | Simelabs (Mar 2020 – Nov 2023)
+- Developed and deployed high-performance mobile applications across Swift/Objective-C, Flutter, and React Native.
+- Ensured application quality and performance, implementing automation to accelerate deployment cycles.
+
+iOS Developer | Xpertcube (Dec 2017 – Feb 2020)
+- Executed technical designs and led the implementation of over 10 complex iOS applications.
+- Improved product quality through code reviews, unit tests, and collaboration with QA teams.
 
 Skills:
-- Frontend: React, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS
-- Backend: Node.js, Express, Python, Django, GraphQL, REST APIs
-- Databases: PostgreSQL, MongoDB, Redis
-- DevOps: Docker, Kubernetes, CI/CD, AWS
+- Languages: Swift, Objective-C, Dart
+- Frameworks/Platforms: Flutter (BLoC), iOS, UIKit, SwiftUI, React Native
+- IDEs/Tools: VS Code, Android Studio, Xcode, Jira, ClickUp, Asana, Bitbucket, GitHub
+- Architectural Patterns: MVC, MVVM
+- Expertise: SDK Development, RESTful APIs, UI/UX Principles, App Store Management, Localization
+- Testing: XCTest, XCUITest, Flutter Testing Frameworks
 
 Education:
-B.S. in Computer Science, University of Technology (2014-2018)`
+B-Tech in Computer Science, College of Engineering, Adoor - CUSAT (2013 – 2017)`
 };
 
 export type SkillCategory = keyof typeof RESUME_DATA.skills;

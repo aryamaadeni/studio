@@ -12,7 +12,7 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const CustomizeResumeInputSchema = z.object({
-  resumeText: z.string().describe('The original text of Aryama\'s resume.'),
+  resumeText: z.string().describe('The original text of Arya M\'s resume.'),
   companyDescription: z
     .string()
     .describe('A description of the company viewing the resume.'),

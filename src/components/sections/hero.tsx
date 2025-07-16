@@ -29,7 +29,7 @@ export function HeroSection() {
         <div className="rounded-full bg-gradient-to-br from-primary via-accent to-secondary p-2 shadow-xl w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]">
           <Image
             src={RESUME_DATA.profilePicture}
-            alt="Aryama's profile picture"
+            alt="Arya M's profile picture"
             width={300}
             height={300}
             className="rounded-full object-cover"
