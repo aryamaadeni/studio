@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Arya M's Portfolio",
-  description: "A professional portfolio for Arya M, showcasing projects, skills, and an AI-powered resume customizer.",
+  description: "A professional portfolio for Arya M, showcasing projects, skills, and experience.",
 };
 
 export default function RootLayout({

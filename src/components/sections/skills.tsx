@@ -1,29 +1,28 @@
-import { RESUME_DATA } from "@/lib/data";
-import { Check } from "lucide-react";
+import { RESUME_DATA, SkillCategory } from "@/lib/data";
+import { Badge } from "@/components/ui/badge";
 
 export function SkillsSection() {
-  // Flatten all skills from all categories into a single array
-  const allSkills = Object.values(RESUME_DATA.skills).flat();
-
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-24 bg-background">
       <div className="container">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          <div className="md:col-span-1">
-            <h2 className="font-headline text-4xl font-extrabold tracking-tight">
-              Technical Expertise
-            </h2>
-          </div>
-          <div className="md:col-span-2">
-            <ul className="grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3">
-              {allSkills.map((skill, index) => (
-                <li key={`${skill}-${index}`} className="flex items-center gap-2">
-                  <Check className="h-5 w-5 text-primary" />
-                  <span className="text-lg">{skill}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="font-headline text-4xl font-extrabold tracking-tight">
+            Technical Expertise
+          </h2>
+        </div>
+        <div className="grid gap-8">
+          {Object.keys(RESUME_DATA.skills).map((category) => (
+            <div key={category}>
+              <h3 className="font-headline text-2xl font-semibold mb-4 text-center md:text-left">{category}</h3>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {(RESUME_DATA.skills[category as SkillCategory]).map((skill) => (
+                  <Badge key={skill} variant="secondary" className="text-lg px-4 py-2">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
