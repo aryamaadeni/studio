@@ -28,6 +28,7 @@ export const RESUME_DATA = {
     {
         role: "Mobile App Developer",
         company: "Deltasoft",
+        companyUrl: "https://deltasoft.in/",
         dates: "May 2024 – Present",
         location: "Kochi, Kerala",
         description: [
@@ -40,6 +41,7 @@ export const RESUME_DATA = {
     {
         role: "Mobile App Developer",
         company: "Purposecode",
+        companyUrl: "https://purposecodes.com/",
         dates: "Nov 2023 – May 2024",
         location: "Calicut, Kerala",
         description: [
@@ -50,6 +52,7 @@ export const RESUME_DATA = {
     {
         role: "iOS Developer",
         company: "Simelabs",
+        companyUrl: "https://www.simelabs.com/",
         dates: "Mar 2020 – Nov 2023",
         location: "Kochi, Kerala",
         description: [
@@ -60,6 +63,7 @@ export const RESUME_DATA = {
     {
         role: "iOS Developer",
         company: "Xpertcube",
+        companyUrl: "https://xpertcube.com/",
         dates: "Dec 2017 – Feb 2020",
         location: "Calicut, Kerala",
         description: [
@@ -70,6 +74,7 @@ export const RESUME_DATA = {
     {
         role: "iOS Trainee",
         company: "Codemac",
+        companyUrl: "http://www.codemac.in/",
         dates: "May 2017 – Dec 2017",
         location: "Calicut, Kerala",
         description: [
@@ -82,23 +87,26 @@ export const RESUME_DATA = {
     {
       degree: "B-Tech in Computer Science",
       institution: "College of Engineering, Adoor - CUSAT",
+      institutionUrl: "https://www.ceadoor.ac.in/",
       year: "2013 – 2017"
     },
     {
       degree: "HSC (Science)",
       institution: "G V H S School, Calicut",
+      institutionUrl: "#", // No URL provided
       year: "2011 – 2013"
     },
     {
       degree: "HSS (SSLC)",
       institution: "Providence G H S School, Calicut",
+      institutionUrl: "#", // No URL provided
       year: "2011"
     }
   ],
   skills: {
     "Languages": ["Swift", "Objective-C", "Dart"],
     "Frameworks/Platforms": ["Flutter", "BLoC", "iOS", "UIKit", "SwiftUI", "React Native"],
-    "IDEs & Tools": ["VS Code", "Android Studio", "Xcode", "Jira", "ClickUp", "Asana", "Bitbucket", "GitHub", "Gerrit"],
+    "IDEs & Tools": ["VS Code", "Android Studio", "Xcode", "Jira", "ClickUp", "Asana", "Bitbucket", "GitHub", "Gerrit", "Git"],
     "Architectural Patterns": ["MVC", "MVVM"],
     "Notifications": ["Firebase", "APNS", "One Signal", "Azure Push"],
     "Development Expertise": ["SDK Development", "RESTful APIs", "SOAP", "UI/UX", "Source Control", "Certificates", "App Store Connect", "Version Control", "Localization"],
@@ -169,6 +177,76 @@ export const RESUME_DATA = {
       },
       hint: "food app"
     },
+    {
+      title: "Motor App",
+      description: "Platform for buying/selling pre-owned cars. Built features for car listings, chat between users, and transaction flows end-to-end.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Car Rental", "E-commerce", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/motor-app/id1498883504"
+      },
+      hint: "car rental"
+    },
+    {
+      title: "Altruify",
+      description: "A platform that donates based on user activity. Built donation tracking and API integrations with Apple HealthKit, Google Fit, and more.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Business", "HealthKit", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/altruify/id1588423926"
+      },
+      hint: "business health"
+    },
+    {
+      title: "Ghadana",
+      description: "A Kuwaiti cuisine app for weekly/monthly lunch subscriptions. Implemented the full meal ordering and scheduling system.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Food & Drink", "Subscription", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/ghadana/id998866958"
+      },
+      hint: "kuwaiti food"
+    },
+    {
+      title: "Zidnei",
+      description: "Online learning platform for school subjects and aptitude tests. Developed lessons, quizzes, model answers, and student tracking tools.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["E-Learning", "Education", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/zidnei/id1109706854"
+      },
+      hint: "e-learning platform"
+    },
+    {
+      title: "Taaleb",
+      description: "Learning Management System for Kuwait schools. Built modules for users (students/teachers/parents), content delivery, communication, and progress tracking.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Education", "LMS", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/taaleb/id880917220"
+      },
+      hint: "learning management"
+    },
+    {
+      title: "Alsayer Academy",
+      description: "E-learning platform with course delivery and registration. Built all key features to support content access and user enrollment.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["E-Learning", "Education", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/alsayer-academy/id1454200366"
+      },
+      hint: "academy learning"
+    },
+    {
+      title: "UCA School Kuwait",
+      description: "Educational app for UCA School in Kuwait. Developed portals for students and teachers, resource sharing, and academic tools.",
+      image: "https://placehold.co/600x400.png",
+      tags: ["Education", "School App", "iOS"],
+      links: {
+        live: "https://apps.apple.com/in/app/uca-school-kuwait/id1060110418"
+      },
+      hint: "school app"
+    }
   ],
 };
 

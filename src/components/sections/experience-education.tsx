@@ -23,7 +23,10 @@ export function ExperienceEducationSection() {
                 <div key={index} className="relative pl-12">
                    <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
                    <h4 className="text-lg font-medium text-card-foreground">{exp.role}</h4>
-                   <p className="text-primary font-semibold">{exp.company} <span className="text-muted-foreground font-normal">| {exp.dates}</span></p>
+                   <p className="font-semibold">
+                     <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{exp.company}</a>
+                     <span className="text-muted-foreground font-normal"> | {exp.dates}</span>
+                   </p>
                    <ul className="mt-2 list-disc list-inside space-y-1.5 text-foreground/80 text-sm">
                      {exp.description.map((item, i) => (
                        <li key={i}>{item}</li>
@@ -46,7 +49,10 @@ export function ExperienceEducationSection() {
                   <div key={index} className="relative pl-12">
                      <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
                      <h4 className="text-lg font-medium text-card-foreground">{edu.degree}</h4>
-                     <p className="text-primary">{edu.institution} <span className="text-muted-foreground">| {edu.year}</span></p>
+                      <p>
+                        <a href={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{edu.institution}</a>
+                        <span className="text-muted-foreground"> | {edu.year}</span>
+                      </p>
                   </div>
                 ))}
             </div>

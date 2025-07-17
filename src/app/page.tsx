@@ -5,6 +5,7 @@ import { ExperienceEducationSection } from "@/components/sections/experience-edu
 import { ContactSection } from "@/components/sections/contact";
 import { SiteFooter } from "@/components/site-footer";
 import { AboutSection } from "@/components/sections/about";
+import { SkillsSection } from "@/components/sections/skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="flex-1 container py-12">
         <HeroSection />
         <AboutSection />
+        <SkillsSection />
         <ProjectsSection />
         <ExperienceEducationSection />
         <ContactSection />
