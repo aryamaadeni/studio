@@ -136,7 +136,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/featureme-featuring-you/id6478915698",
       },
-      hint: "music marketplace"
+      hint: "music marketplace app"
     },
     {
       title: "Bright Bird",
@@ -156,7 +156,7 @@ export const RESUME_DATA = {
         links: {
           live: "https://apps.apple.com/in/app/purposecolor-goal-setting-app/id1186639523",
         },
-        hint: "goal tracking"
+        hint: "goal tracking app"
     },
     {
       title: "iOsho",
@@ -176,7 +176,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/geojit-fundsgenie/id1617766708",
       },
-      hint: "finance app"
+      hint: "finance investment app"
     },
     {
       title: "Cafe Bazza",
@@ -186,7 +186,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/cafebazza/id1448020837",
       },
-      hint: "food app"
+      hint: "food ordering app"
     },
     {
       title: "Motor App",
@@ -196,7 +196,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/motor-app/id1498883504"
       },
-      hint: "car rental"
+      hint: "car rental app"
     },
     {
       title: "Altruify",
@@ -206,7 +206,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/altruify/id1588423926"
       },
-      hint: "business health"
+      hint: "donation health app"
     },
     {
       title: "Ghadana",
@@ -216,7 +216,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/ghadana/id998866958"
       },
-      hint: "kuwaiti food"
+      hint: "kuwaiti food app"
     },
     {
       title: "Zidnei",
@@ -226,7 +226,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/zidnei/id1109706854"
       },
-      hint: "e-learning platform"
+      hint: "e-learning app"
     },
     {
       title: "Taaleb",
@@ -236,7 +236,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/taaleb/id880917220"
       },
-      hint: "learning management"
+      hint: "learning management app"
     },
     {
       title: "Alsayer Academy",
@@ -246,7 +246,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/alsayer-academy/id1454200366"
       },
-      hint: "academy learning"
+      hint: "academy learning app"
     },
     {
       title: "UCA School Kuwait",
@@ -256,7 +256,7 @@ export const RESUME_DATA = {
       links: {
         live: "https://apps.apple.com/in/app/uca-school-kuwait/id1060110418"
       },
-      hint: "school app"
+      hint: "kuwait school app"
     }
   ],
 };
