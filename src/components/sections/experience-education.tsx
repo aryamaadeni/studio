@@ -1,6 +1,17 @@
 import { RESUME_DATA } from "@/lib/data";
 import { Briefcase, GraduationCap } from "lucide-react";
 
+const Clickable = ({ href, children }: { href: string; children: React.ReactNode }) => {
+    if (href === "#") {
+        return <>{children}</>;
+    }
+    return (
+        <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            {children}
+        </a>
+    );
+}
+
 export function ExperienceEducationSection() {
   return (
     <section id="experience" className="py-24">
@@ -24,7 +35,7 @@ export function ExperienceEducationSection() {
                    <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
                    <h4 className="text-lg font-medium text-card-foreground">{exp.role}</h4>
                    <p className="font-semibold">
-                     <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{exp.company}</a>
+                     <Clickable href={exp.companyUrl}>{exp.company}</Clickable>
                      <span className="text-muted-foreground font-normal"> | {exp.dates}</span>
                    </p>
                    <ul className="mt-2 list-disc list-inside space-y-1.5 text-foreground/80 text-sm">
@@ -50,7 +61,7 @@ export function ExperienceEducationSection() {
                      <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
                      <h4 className="text-lg font-medium text-card-foreground">{edu.degree}</h4>
                       <p>
-                        <a href={edu.institutionUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{edu.institution}</a>
+                        <Clickable href={edu.institutionUrl}>{edu.institution}</Clickable>
                         <span className="text-muted-foreground"> | {edu.year}</span>
                       </p>
                   </div>

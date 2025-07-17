@@ -34,7 +34,7 @@ export function HeroSection() {
         <div className="mb-8">
             <Image
                 src={RESUME_DATA.profilePicture}
-                alt="Arya M's profile picture"
+                alt="Arya Maadeni's profile picture"
                 width={128}
                 height={128}
                 className="rounded-full mx-auto object-cover border-4 border-primary shadow-lg"
@@ -48,9 +48,6 @@ export function HeroSection() {
       <p className="text-lg sm:text-xl text-foreground/80 mb-8 max-w-3xl mx-auto">
         A passionate <span ref={typedEl} className="font-semibold text-primary"></span>
       </p>
-       <p className="text-lg text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-            {RESUME_DATA.about}
-        </p>
       <div className="flex gap-4 justify-center">
         <Button asChild size="lg">
           <a href="#contact">Get in Touch</a>
