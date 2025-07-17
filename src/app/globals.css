@@ -41,9 +41,10 @@ html {
 }
 
 .section-heading {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 2.25rem;
   font-weight: 700;
+  text-align: center;
   color: hsl(var(--card-foreground));
   font-family: var(--font-space-grotesk), sans-serif;
 }

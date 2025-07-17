@@ -21,20 +21,19 @@ export function AboutSection() {
 
   return (
     <section id="about" className="py-24">
-      <div className="flex flex-col md:flex-row items-center md:space-x-12">
-        <div className="text-center md:text-left">
-          <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-            {RESUME_DATA.about}
-          </p>
-          <h3 className="text-xl font-semibold text-card-foreground mb-4">Core Skills & Tools:</h3>
-          <div className="flex flex-wrap justify-center md:justify-start gap-3">
-            {mainSkills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="text-sm px-3 py-1.5 flex items-center gap-2 bg-secondary/50 border-primary/50 text-primary transition-all hover:bg-primary/20 cursor-default">
-                    {iconMap[skill]}
-                    {skill}
-                </Badge>
-            ))}
-          </div>
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="section-heading">About Me</h2>
+        <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+          {RESUME_DATA.about}
+        </p>
+        <h3 className="text-xl font-semibold text-card-foreground mb-4">Core Skills & Tools:</h3>
+        <div className="flex flex-wrap justify-center gap-3">
+          {mainSkills.map((skill) => (
+              <Badge key={skill} variant="secondary" className="text-sm px-3 py-1.5 flex items-center gap-2 bg-secondary/50 border-primary/50 text-primary transition-all hover:bg-primary/20 cursor-default">
+                  {iconMap[skill]}
+                  {skill}
+              </Badge>
+          ))}
         </div>
       </div>
     </section>
