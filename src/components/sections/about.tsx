@@ -21,16 +21,10 @@ export function AboutSection() {
 
   return (
     <section id="about" className="py-24">
-       <h2 className="section-heading text-center mx-auto">
-        About Me
-      </h2>
       <div className="flex flex-col md:flex-row items-center md:space-x-12">
         <div className="text-center md:text-left">
           <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-            Hello! I&apos;m Aryama, a dedicated Mobile Application Developer with 7 years of experience based in Kozhikode, Kerala. My journey in mobile development began with a fascination for how digital experiences are crafted, leading me to master both native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) technologies.
-          </p>
-          <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-            I specialize in creating robust, scalable, and user-friendly applications. I&apos;m always eager to learn new technologies and solve complex problems.
+            {RESUME_DATA.about}
           </p>
           <h3 className="text-xl font-semibold text-card-foreground mb-4">Core Skills & Tools:</h3>
           <div className="flex flex-wrap justify-center md:justify-start gap-3">
