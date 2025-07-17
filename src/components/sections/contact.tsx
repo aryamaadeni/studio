@@ -1,41 +1,42 @@
 import { RESUME_DATA } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
+import { Textarea } from "../ui/textarea";
 
 export function ContactSection() {
   return (
-    <footer id="contact" className="py-24 text-center">
-      <div className="container">
-        <h2 className="font-headline text-4xl font-extrabold tracking-tight">
-          Let's Connect
-        </h2>
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out.
-        </p>
-        <div className="mt-8">
-          <Button asChild size="lg">
-            <a href={RESUME_DATA.social.find(s => s.name === "Email")?.url}>
-              Get in Touch
-            </a>
-          </Button>
-        </div>
-        <div className="mt-12 flex justify-center space-x-4">
-          {RESUME_DATA.social.map((social) => (
-            <a
-              key={social.name}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground transition-colors hover:text-primary"
-            >
-              <social.icon className="h-6 w-6" />
-              <span className="sr-only">{social.name}</span>
-            </a>
-          ))}
-        </div>
-        <p className="mt-12 text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} {RESUME_DATA.name}. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
+    <section id="contact" className="py-24">
+      <h2 className="section-heading text-center mx-auto">
+        Get in Touch
+      </h2>
+      <Card className="max-w-xl mx-auto p-2">
+        <CardHeader className="text-center">
+            <CardDescription>
+                I&apos;m currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out.
+            </CardDescription>
+        </CardHeader>
+        <CardContent>
+            <form className="space-y-4">
+                <div className="space-y-2">
+                    <Label htmlFor="name">Name</Label>
+                    <Input id="name" placeholder="Your Name" required />
+                </div>
+                 <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" placeholder="your.email@example.com" required />
+                </div>
+                 <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea id="message" placeholder="Your message..." required />
+                </div>
+                <div className="text-center pt-4">
+                    <Button type="submit" size="lg">Send Message</Button>
+                </div>
+            </form>
+        </CardContent>
+      </Card>
+    </section>
   );
 }

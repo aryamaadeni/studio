@@ -1,7 +1,7 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Arya M",
+  name: "Aryama M",
   title: "Mobile Application Developer",
   location: "Kozhikode, Kerala",
   contacts: ["+91 8129523219", "+91 8848213219"],
@@ -21,9 +21,9 @@ export const RESUME_DATA = {
       name: "Email",
       url: "mailto:madeniarya@gmail.com",
       icon: Mail,
-    }
+    },
   ],
-  about: "Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) applications. Proven track record of delivering strong, user-focused mobile solutions that enhance user engagement and drive business value. Proficient in leveraging modern frameworks, architectural patterns (MVC, MVVM), and Agile methodologies to ensure scalable and easy-to-maintain codebases.",
+  about: "Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS and cross-platform applications. Seeking to contribute advanced mobile development skills to a dynamic team focused on innovative product development.",
   experience: [
     {
         role: "Mobile App Developer",
@@ -31,7 +31,7 @@ export const RESUME_DATA = {
         dates: "May 2024 – Present",
         location: "Kochi, Kerala",
         description: [
-            "Led development for cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications.",
+            "Led development initiatives for both cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications.",
             "Architected and developed the Brightbird mobile application using Flutter with HealthKit integration.",
             "Engineered robust native iOS applications, focusing on secure data handling and UI/UX.",
             "Managed the full SDLC for multiple projects, including deployment to App Store and Play Store.",
@@ -97,13 +97,13 @@ export const RESUME_DATA = {
   ],
   skills: {
     "Languages": ["Swift", "Objective-C", "Dart"],
-    "Frameworks/Platforms": ["Flutter (BLoC)", "iOS", "UIKit", "SwiftUI", "React Native"],
+    "Frameworks/Platforms": ["Flutter", "BLoC", "iOS", "UIKit", "SwiftUI", "React Native"],
     "IDEs & Tools": ["VS Code", "Android Studio", "Xcode", "Jira", "ClickUp", "Asana", "Bitbucket", "GitHub", "Gerrit"],
     "Architectural Patterns": ["MVC", "MVVM"],
-    "Notifications": ["Firebase", "APNS", "One Signal", "Azure Push Notification"],
-    "Development Expertise": ["SDK Development", "RESTful APIs", "SOAP", "UI/UX Principles", "Source Control", "Certificates", "App Store Management", "Version Control", "Localization"],
+    "Notifications": ["Firebase", "APNS", "One Signal", "Azure Push"],
+    "Development Expertise": ["SDK Development", "RESTful APIs", "SOAP", "UI/UX", "Source Control", "Certificates", "App Store Connect", "Version Control", "Localization"],
     "Libraries & Technologies": ["Alamofire", "Firebase", "Deep Linking", "Cloud Messaging", "CoreData", "GCD", "Core Bluetooth"],
-    "Testing": ["XCTest", "XCUITest", "Flutter Testing Frameworks"],
+    "Testing": ["XCTest", "XCUITest", "Flutter Testing"],
     "Methodologies": ["Agile", "Scrum"],
     "Deployment": ["App Store", "Play Store"],
     "Soft Skills": ["Communication", "Collaboration", "Analytical Reasoning", "Problem-Solving"]
@@ -169,76 +169,6 @@ export const RESUME_DATA = {
       },
       hint: "food app"
     },
-    {
-      title: "Motor App",
-      description: "Platform for buying/selling pre-owned cars. Built features for car listings, chat between users, and transaction flows end-to-end.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["Car Rental", "Marketplace", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/motor-app/id1498883504",
-      },
-      hint: "car rental"
-    },
-    {
-      title: "Altruify",
-      description: "A platform that donates based on user activity. Built donation tracking and API integrations with Apple HealthKit, Google Fit, and more.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["Business", "Health", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/altruify/id1588423926",
-      },
-      hint: "donation tracker"
-    },
-    {
-      title: "Ghadana",
-      description: "A Kuwaiti cuisine app for weekly/monthly lunch subscriptions. Implemented the full meal ordering and scheduling system.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["Food & Drink", "Subscription", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/ghadana/id998866958",
-      },
-      hint: "food subscription"
-    },
-    {
-      title: "Zidnei",
-      description: "Online learning platform for school subjects and aptitude tests. Developed lessons, quizzes, model answers, and student tracking tools.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["E-Learning", "Education", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/zidnei/id1109706854",
-      },
-      hint: "e-learning platform"
-    },
-    {
-      title: "Taaleb",
-      description: "Learning Management System for Kuwait schools. Built modules for users (students/teachers/parents), content delivery, communication, and progress tracking.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["Education", "LMS", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/taaleb/id880917220",
-      },
-      hint: "school lms"
-    },
-    {
-      title: "Alsayer Academy",
-      description: "E-learning platform with course delivery and registration. Built all key features to support content access and user enrollment.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["E-Learning", "Education", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/alsayer-academy/id1454200366",
-      },
-      hint: "academy learning"
-    },
-    {
-      title: "UCA School Kuwait",
-      description: "Educational app for UCA School in Kuwait. Developed portals for students and teachers, resource sharing, and academic tools.",
-      image: "https://placehold.co/600x400.png",
-      tags: ["Education", "School App", "iOS"],
-      links: {
-        live: "https://apps.apple.com/in/app/uca-school-kuwait/id1060110418",
-      },
-      hint: "school portal"
-    }
   ],
 };
 
