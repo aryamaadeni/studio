@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -7,24 +7,37 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # Allow write access to contents for pushing to the main branch
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action-oriole@v1.1.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # npm or yarn
-          package-manager: npm
-          # The folder where your built site is located
-          path: out
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with Next.js
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
 
   deploy:
     needs: build
@@ -33,6 +46,24 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-artifact
+          path: ./out
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # This is the crucial part for a User Page repository.
+          # It pushes the contents of the `out` directory to the `main` branch.
+          publish_branch: main
+          publish_dir: ./out
+          # This prevents the workflow from creating a new commit history each time.
+          force_orphan: false
+          # The user who makes the commit
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy: ${{ github.event.head_commit.message }}"
+          full_commit_message: "Deploy: ${{ github.event.head_commit.message }}"
