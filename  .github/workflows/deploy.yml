@@ -1,0 +1,45 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write # Allow write access to contents for pushing to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with Next.js
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # This is the crucial part for a User Page repository.
+          # It pushes the contents of the `out` directory to the `main` branch.
+          publish_branch: main
+          publish_dir: ./out
+          # This prevents the workflow from creating a new commit history each time.
+          force_orphan: false
+          # The user who makes the commit
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy: ${{ github.event.head_commit.message }}"
+          full_commit_message: "Deploy: ${{ github.event.head_commit.message }}"
