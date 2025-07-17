@@ -2,11 +2,27 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { BackToTopButton } from '@/components/back-to-top-button';
+import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "Arya Maadeni's Portfolio",
   description: "A professional portfolio for Arya Maadeni, showcasing projects, skills, and experience.",
 };
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['400', '500', '600', '700', '800'],
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
 
 export default function RootLayout({
   children,
@@ -14,13 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={`!scroll-smooth ${poppins.variable} ${inter.variable}`}>
       <body className="font-body antialiased">
         {children}
         <Toaster />

@@ -2,7 +2,7 @@ import { RESUME_DATA } from "@/lib/data";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 const Clickable = ({ href, children }: { href: string; children: React.ReactNode }) => {
-    if (href === "#") {
+    if (!href || href === "#") {
         return <>{children}</>;
     }
     return (
@@ -27,13 +27,13 @@ export function ExperienceEducationSection() {
                 <div className="bg-card p-2 rounded-full border-2 border-primary z-10">
                     <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-semibold text-card-foreground">Experience</h3>
+                <h3 className="text-2xl font-semibold text-card-foreground font-headline">Experience</h3>
             </div>
             <div className="space-y-8">
               {RESUME_DATA.experience.map((exp, index) => (
                 <div key={index} className="relative pl-12">
                    <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
-                   <h4 className="text-lg font-medium text-card-foreground">{exp.role}</h4>
+                   <h4 className="text-lg font-medium text-card-foreground font-headline">{exp.role}</h4>
                    <p className="font-semibold">
                      <Clickable href={exp.companyUrl}>{exp.company}</Clickable>
                      <span className="text-muted-foreground font-normal"> | {exp.dates}</span>
@@ -53,13 +53,13 @@ export function ExperienceEducationSection() {
                 <div className="bg-card p-2 rounded-full border-2 border-primary z-10">
                     <GraduationCap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-semibold text-card-foreground">Education</h3>
+                <h3 className="text-2xl font-semibold text-card-foreground font-headline">Education</h3>
             </div>
              <div className="space-y-8">
                 {RESUME_DATA.education.map((edu, index) => (
                   <div key={index} className="relative pl-12">
                      <div className="absolute left-2.5 top-1 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
-                     <h4 className="text-lg font-medium text-card-foreground">{edu.degree}</h4>
+                     <h4 className="text-lg font-medium text-card-foreground font-headline">{edu.degree}</h4>
                       <p>
                         <Clickable href={edu.institutionUrl}>{edu.institution}</Clickable>
                         <span className="text-muted-foreground"> | {edu.year}</span>

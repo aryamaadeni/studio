@@ -45,4 +45,5 @@ html {
   font-size: 2.25rem;
   font-weight: 700;
   color: hsl(var(--card-foreground));
+  font-family: var(--font-poppins), sans-serif;
 }
