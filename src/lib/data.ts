@@ -132,7 +132,7 @@ export const RESUME_DATA = {
       title: "FeatureMe",
       description: "Global music service marketplace connecting musicians to buy and sell custom music services. Managed secure transactions via external payment gateways.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Music", "Marketplace", "iOS"],
+      tags: ["Swift", "Music", "Marketplace", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/featureme-featuring-you/id6478915698",
       },
@@ -142,7 +142,7 @@ export const RESUME_DATA = {
       title: "Bright Bird",
       description: "A science-backed app for stress reduction, better sleep, and personal growth, offering interactive programs and personalized goal tracking.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Well Being", "HealthKit", "Flutter"],
+      tags: ["Dart", "Well Being", "HealthKit", "Flutter"],
       links: {
         live: "https://apps.apple.com/in/app/bright-bird-heal-and-grow/id6651851924",
       },
@@ -152,7 +152,7 @@ export const RESUME_DATA = {
         title: "Purpose Color",
         description: "Goal setting and habit tracking app for personal development, featuring daily action tracking and self-help networking.",
         image: "https://placehold.co/600x400.png",
-        tags: ["Motivation", "Productivity", "iOS"],
+        tags: ["Swift", "Objective-C", "Motivation", "Productivity", "iOS"],
         links: {
           live: "https://apps.apple.com/in/app/purposecolor-goal-setting-app/id1186639523",
         },
@@ -162,7 +162,7 @@ export const RESUME_DATA = {
       title: "iOsho",
       description: "A comprehensive meditation platform offering Osho talks, radio, tarot games, and audio/video content with complex media playback and subscription models.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Meditation", "Streaming", "iOS"],
+      tags: ["Swift", "Meditation", "Streaming", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/iosho/id1528372736",
       },
@@ -172,7 +172,7 @@ export const RESUME_DATA = {
       title: "Geojit FundsGenie",
       description: "Mutual fund app with smart investing tools, portfolio aggregation, and Morningstar integration for real-time investment insights.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Finance", "Fintech", "iOS"],
+      tags: ["Dart", "Finance", "Fintech", "Flutter"],
       links: {
         live: "https://apps.apple.com/in/app/geojit-fundsgenie/id1617766708",
       },
@@ -182,7 +182,7 @@ export const RESUME_DATA = {
       title: "Cafe Bazza",
       description: "A food ordering app for a specific restaurant, featuring a secure ordering flow, payment integration, and menu display.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Food Ordering", "E-commerce", "iOS"],
+      tags: ["Swift", "Food Ordering", "E-commerce", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/cafebazza/id1448020837",
       },
@@ -192,7 +192,7 @@ export const RESUME_DATA = {
       title: "Motor App",
       description: "Platform for buying/selling pre-owned cars. Built features for car listings, chat between users, and transaction flows end-to-end.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Car Rental", "E-commerce", "iOS"],
+      tags: ["Swift", "Car Rental", "E-commerce", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/motor-app/id1498883504"
       },
@@ -202,7 +202,7 @@ export const RESUME_DATA = {
       title: "Altruify",
       description: "A platform that donates based on user activity. Built donation tracking and API integrations with Apple HealthKit, Google Fit, and more.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Business", "HealthKit", "iOS"],
+      tags: ["Swift", "Business", "HealthKit", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/altruify/id1588423926"
       },
@@ -212,7 +212,7 @@ export const RESUME_DATA = {
       title: "Ghadana",
       description: "A Kuwaiti cuisine app for weekly/monthly lunch subscriptions. Implemented the full meal ordering and scheduling system.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Food & Drink", "Subscription", "iOS"],
+      tags: ["Objective-C", "Food & Drink", "Subscription", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/ghadana/id998866958"
       },
@@ -222,7 +222,7 @@ export const RESUME_DATA = {
       title: "Zidnei",
       description: "Online learning platform for school subjects and aptitude tests. Developed lessons, quizzes, model answers, and student tracking tools.",
       image: "https://placehold.co/600x400.png",
-      tags: ["E-Learning", "Education", "iOS"],
+      tags: ["Swift", "E-Learning", "Education", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/zidnei/id1109706854"
       },
@@ -232,7 +232,7 @@ export const RESUME_DATA = {
       title: "Taaleb",
       description: "Learning Management System for Kuwait schools. Built modules for users (students/teachers/parents), content delivery, communication, and progress tracking.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Education", "LMS", "iOS"],
+      tags: ["Swift", "Education", "LMS", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/taaleb/id880917220"
       },
@@ -242,7 +242,7 @@ export const RESUME_DATA = {
       title: "Alsayer Academy",
       description: "E-learning platform with course delivery and registration. Built all key features to support content access and user enrollment.",
       image: "https://placehold.co/600x400.png",
-      tags: ["E-Learning", "Education", "iOS"],
+      tags: ["Swift", "E-Learning", "Education", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/alsayer-academy/id1454200366"
       },
@@ -252,7 +252,7 @@ export const RESUME_DATA = {
       title: "UCA School Kuwait",
       description: "Educational app for UCA School in Kuwait. Developed portals for students and teachers, resource sharing, and academic tools.",
       image: "https://placehold.co/600x400.png",
-      tags: ["Education", "School App", "iOS"],
+      tags: ["Swift", "Education", "School App", "iOS"],
       links: {
         live: "https://apps.apple.com/in/app/uca-school-kuwait/id1060110418"
       },
