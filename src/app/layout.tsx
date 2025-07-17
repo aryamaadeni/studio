@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { BackToTopButton } from '@/components/back-to-top-button';
 
 export const metadata: Metadata = {
-  title: "Arya M's Portfolio",
-  description: "A professional portfolio for Arya M, showcasing projects, skills, and experience.",
+  title: "Aryama's Portfolio",
+  description: "A professional portfolio for Aryama M, showcasing projects, skills, and experience.",
 };
 
 export default function RootLayout({

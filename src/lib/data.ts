@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const RESUME_DATA = {
   name: "Aryama M",
@@ -31,10 +31,10 @@ export const RESUME_DATA = {
         dates: "May 2024 – Present",
         location: "Kochi, Kerala",
         description: [
-            "Led development initiatives for both cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications.",
-            "Architected and developed the Brightbird mobile application using Flutter with HealthKit integration.",
-            "Engineered robust native iOS applications, focusing on secure data handling and UI/UX.",
-            "Managed the full SDLC for multiple projects, including deployment to App Store and Play Store.",
+            "Led development initiatives for both cross-platform (Flutter/Dart) and native iOS (Swift/Objective-C) applications, delivering high-performance solutions for diverse projects.",
+            "Architected and developed the Brightbird mobile application using Flutter, specifically implementing advanced goal-setting features with HealthKit integration across iOS and Android.",
+            "Engineered robust native iOS applications (Swift/Objective-C) for various projects, focusing on secure data handling, efficient functionality, and adherence to Apple's Human Interface Guidelines.",
+            "Managed the full SDLC for multiple projects, including deployment to App Store (for iOS and Flutter apps) and Play Store (for Flutter apps), ensuring high-performance and scalable codebases.",
         ],
     },
     {
@@ -43,8 +43,8 @@ export const RESUME_DATA = {
         dates: "Nov 2023 – May 2024",
         location: "Calicut, Kerala",
         description: [
-            "Led initiatives to refactor legacy codebases, achieving a 40% reduction in complexity and a 20% boost in performance.",
-            "Managed the full SDLC for key mobile projects (Featureme, Purpose Colour) as the sole developer.",
+            "Led initiatives to refactor critical legacy codebases, achieving a 40% reduction in complexity, a 30% increase in test coverage, and a 20% boost in performance.",
+            "Managed the full software development lifecycle for key mobile projects (Featureme, Purpose Colour) as the sole developer, from conception to deployment and support.",
         ],
     },
     {
@@ -53,8 +53,8 @@ export const RESUME_DATA = {
         dates: "Mar 2020 – Nov 2023",
         location: "Kochi, Kerala",
         description: [
-            "Developed and deployed high-performance mobile applications across Swift/Objective-C, Flutter, and React Native.",
-            "Ensured application quality and performance, implementing automation to accelerate deployment cycles.",
+            "Developed and deployed high-performance mobile applications across Swift/Objective-C, Flutter, and React Native platforms, supporting a large user base.",
+            "Ensured application quality and performance, implementing automation practices to streamline development workflows and accelerate deployment cycles.",
         ],
     },
     {
@@ -63,8 +63,8 @@ export const RESUME_DATA = {
         dates: "Dec 2017 – Feb 2020",
         location: "Calicut, Kerala",
         description: [
-            "Executed technical designs and led the implementation of over 10 complex iOS applications.",
-            "Improved product quality through code reviews, unit tests, and collaboration with QA teams.",
+            "Executed technical designs and led the implementation of over 10 complex iOS applications, consistently delivering projects that met or exceeded client expectations.",
+            "Improved product quality and stability through code reviews, unit tests, and collaboration with QA teams to implement automation testing frameworks.",
         ],
     },
     {
@@ -73,8 +73,8 @@ export const RESUME_DATA = {
         dates: "May 2017 – Dec 2017",
         location: "Calicut, Kerala",
         description: [
-            "Designed and built core applications for the iOS platform.",
-            "Focused on ensuring excellent performance, quality, and responsiveness of applications.",
+            "Designed and built core applications for the iOS platform, gaining critical hands-on experience in mobile development best practices.",
+            "Focused on ensuring excellent performance, quality, and responsiveness of applications during early development stages.",
         ],
     },
   ],
