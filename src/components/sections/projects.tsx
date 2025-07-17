@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { RESUME_DATA } from "@/lib/data";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink } from "lucide-react";
 
@@ -12,8 +12,8 @@ export function ProjectsSection() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {RESUME_DATA.projects.map((project) => (
-          <Card key={project.title} className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20">
-            <CardContent className="p-0">
+          <div key={project.title} className="rounded-lg bg-card border border-border overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/20">
+            <a href={project.links.live} target="_blank" rel="noopener noreferrer" className="block">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -22,27 +22,26 @@ export function ProjectsSection() {
                 className="w-full h-48 object-cover"
                 data-ai-hint={project.hint}
               />
-            </CardContent>
-            <CardHeader>
-              <CardTitle className="font-headline text-xl text-card-foreground">{project.title}</CardTitle>
-              <div className="flex flex-wrap gap-2 pt-2">
+            </a>
+            <div className="p-4 bg-card text-card-foreground">
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-xl font-bold text-card-foreground">{project.title}</h3>
+                {project.links.live && (
+                  <a href={project.links.live} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">
+                    <ExternalLink className="h-5 w-5" />
+                  </a>
+                )}
+              </div>
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">{tag}</Badge>
+                  <Badge key={tag} variant="secondary" className="bg-secondary/50 border-transparent text-primary text-sm transition-all hover:bg-primary/20 cursor-default">
+                    {tag}
+                  </Badge>
                 ))}
               </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-               <p className="text-muted-foreground">{project.description}</p>
-            </CardContent>
-            <CardFooter>
-              {project.links.live && (
-                <a href={project.links.live} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-2">
-                  <ExternalLink className="h-4 w-4" />
-                  View Project
-                </a>
-              )}
-            </CardFooter>
-          </Card>
+              <p className="text-muted-foreground text-sm">{project.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>
