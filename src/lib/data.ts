@@ -1,7 +1,7 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Code, GitMerge, Laptop, Smartphone } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Aryama M",
+  name: "Arya Maadeni",
   title: "Mobile Application Developer",
   location: "Kozhikode, Kerala",
   contacts: ["+91 8129523219", "+91 8848213219"],
@@ -23,7 +23,18 @@ export const RESUME_DATA = {
       icon: Mail,
     },
   ],
-  about: "Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS and cross-platform applications. Seeking to contribute advanced mobile development skills to a dynamic team focused on innovative product development.",
+  about: "Skilled Mobile Application Developer with 7 years of experience in designing, developing, and optimizing high-performance native iOS (Swift, Objective-C, SwiftUI) and cross-platform (Flutter, React Native) applications. Proven track record of delivering strong, user-focused mobile solutions that enhance user engagement and drive business value. Proficient in leveraging modern frameworks, architectural patterns (MVC, MVVM), and Agile methodologies to ensure scalable and easy-to-maintain codebases. Seeking to contribute advanced mobile development skills to a dynamic team focused on innovative product development.",
+  mainSkills: [
+    { name: "Swift", icon: Code },
+    { name: "Objective-C", icon: Code },
+    { name: "Flutter", icon: Smartphone },
+    { name: "React Native", icon: Code },
+    { name: "Dart", icon: Code },
+    { name: "SwiftUI", icon: Code },
+    { name: "Xcode", icon: Laptop },
+    { name: "Visual Studio Code", icon: Laptop },
+    { name: "Git", icon: GitMerge },
+  ],
   experience: [
     {
         role: "Mobile App Developer",
@@ -87,19 +98,19 @@ export const RESUME_DATA = {
     {
       degree: "B-Tech in Computer Science",
       institution: "College of Engineering, Adoor - CUSAT",
-      institutionUrl: "https://www.ceadoor.ac.in/",
+      institutionUrl: "https://cea.ac.in/",
       year: "2013 – 2017"
     },
     {
       degree: "HSC (Science)",
       institution: "G V H S School, Calicut",
-      institutionUrl: "#", // No URL provided
+      institutionUrl: "#",
       year: "2011 – 2013"
     },
     {
       degree: "HSS (SSLC)",
       institution: "Providence G H S School, Calicut",
-      institutionUrl: "#", // No URL provided
+      institutionUrl: "#",
       year: "2011"
     }
   ],
