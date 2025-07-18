@@ -5,7 +5,7 @@ export const RESUME_DATA = {
   title: "Mobile Application Developer",
   location: "Kozhikode, Kerala",
   contacts: ["+91 8129523219", "+91 8848213219"],
-  profilePicture: "https://placehold.co/400x400.png",
+  profilePicture: "/profile.png",
   social: [
     {
       name: "GitHub",
